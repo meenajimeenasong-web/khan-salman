@@ -5,9 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Salman Memon | Stock Market Learning</title>
+<title>Salman Memon | Stock Market Education</title>
 
-<meta name="description" content="Stock market educational resources and financial learning information.">
+<meta name="description" content="Stock market educational information and learning resources.">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -31,37 +31,47 @@ src="https://www.facebook.com/tr?id=1033858096406101&ev=PageView&noscript=1"/>
 <!-- End Meta Pixel Code -->
 
 <style>
+
+:root {
+    --background: #101b2d;
+    --card: #1b2b43;
+    --heading: #ffffff;
+    --text: #c5d1e0;
+    --button1: #16a085;
+    --button2: #2675e8;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fc;
-    color: #172033;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(145deg, #101b2d, #172e49);
+    color: var(--heading);
     line-height: 1.6;
 }
 
 .container {
-    max-width: 440px;
+    max-width: 450px;
     margin: auto;
-    padding: 40px 20px;
+    padding: 35px 20px;
     text-align: center;
 }
 
 /* Profile Photo */
+
 .profile {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin: auto;
+    width: 125px;
+    height: 125px;
+    margin: 0 auto 18px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid white;
-    background: #1769e0;
-    box-shadow: 0 5px 20px rgba(0,0,0,.12);
+    border: 4px solid #ffffff;
+    background: #263e5c;
+    box-shadow: 0 5px 25px rgba(0,0,0,.35);
 }
 
 .profile img {
@@ -71,68 +81,92 @@ body {
     display: block;
 }
 
+/* Heading */
+
 h1 {
-    font-size: 28px;
-    margin-top: 18px;
+    font-size: 29px;
     font-weight: 800;
+    letter-spacing: 1px;
+    margin: 22px 0 8px;
+    color: #ffffff;
 }
 
 .subtitle {
-    color: #64748b;
     font-size: 14px;
-    margin: 8px 0 25px;
+    color: #a9c5df;
+    margin-bottom: 24px;
 }
 
-/* Information Cards */
+/* Buttons */
+
+.telegram-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 12px;
+    margin: 12px 0;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    color: #ffffff;
+    transition: .2s;
+}
+
+.btn-one {
+    background: var(--button1);
+}
+
+.btn-two {
+    background: var(--button2);
+}
+
+.telegram-btn:hover {
+    opacity: .88;
+    transform: translateY(-2px);
+}
+
+/* Content Cards */
+
 .card {
-    background: white;
-    padding: 22px;
-    margin: 18px 0;
-    border-radius: 16px;
+    background: var(--card);
+    border: 1px solid #304762;
+    padding: 21px;
+    margin-top: 22px;
+    border-radius: 15px;
     text-align: left;
-    box-shadow: 0 4px 16px rgba(0,0,0,.04);
 }
 
 .card h2 {
     font-size: 19px;
-    margin-bottom: 10px;
+    color: #70d6c1;
+    margin-bottom: 12px;
 }
 
 .card p {
-    color: #64748b;
+    color: var(--text);
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 9px;
 }
 
-/* Telegram Button */
-.telegram-btn {
-    display: block;
-    width: 100%;
-    background: #1769e0;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    border-radius: 12px;
-    font-size: 17px;
-    font-weight: bold;
-    margin-top: 22px;
-    transition: background .2s;
-}
-
-.telegram-btn:hover {
-    background: #1054b8;
-}
+/* Disclaimer */
 
 .disclaimer {
     font-size: 12px;
-    color: #64748b;
-    margin-top: 22px;
+    color: #9db0c5;
+    margin-top: 25px;
+    line-height: 1.7;
 }
 
 .footer {
-    margin-top: 25px;
     font-size: 12px;
-    color: #94a3b8;
+    color: #8299b2;
+    margin-top: 25px;
+}
+
+@media(max-width:350px) {
+    h1 {
+        font-size: 24px;
+    }
 }
 
 </style>
@@ -142,7 +176,8 @@ h1 {
 
 <main class="container">
 
-    <!-- Original Profile Photo -->
+    <!-- Profile Photo -->
+
     <div class="profile">
         <img
         src="https://drive.google.com/thumbnail?id=1eEPOk4V3YJZv_Rjb_NokL7D4dtwRz8fl&sz=w400"
@@ -150,15 +185,24 @@ h1 {
         referrerpolicy="no-referrer">
     </div>
 
+    <!-- First Button Under Photo -->
+
+    <a class="telegram-btn btn-one"
+       href="https://t.me/+TusfdCoZXV0zYTBl"
+       target="_blank"
+       rel="noopener noreferrer">
+       Join Telegram Channel →
+    </a>
+
     <h1>SALMAN MEMON</h1>
 
     <p class="subtitle">
-        Stock Market Education & Learning
+        Stock Market Education & Learning Resources
     </p>
 
     <div class="card">
 
-        <h2>Welcome</h2>
+        <h2>About This Channel</h2>
 
         <p>
         Explore educational information about stock
@@ -174,7 +218,7 @@ h1 {
 
     <div class="card">
 
-        <h2>Learning Topics</h2>
+        <h2>Educational Topics</h2>
 
         <p>• Stock Market Basics</p>
         <p>• Understanding Market Terminology</p>
@@ -183,11 +227,13 @@ h1 {
 
     </div>
 
-    <a class="telegram-btn"
+    <!-- Second Button -->
+
+    <a class="telegram-btn btn-two"
        href="https://t.me/+TusfdCoZXV0zYTBl"
        target="_blank"
        rel="noopener noreferrer">
-       Visit Telegram Channel →
+       Explore Learning Channel →
     </a>
 
     <p class="disclaimer">
