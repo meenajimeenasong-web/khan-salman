@@ -1,232 +1,167 @@
 
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Salman Memon – Telegram Channel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+<title>Salman Memon | Stock Market Education</title>
 
-fbq('init', '1033858096406101');
-fbq('track', 'PageView');
-</script>
-
-<noscript>
-<img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1033858096406101&ev=PageView&noscript=1"/>
-</noscript>
-<!-- End Meta Pixel Code -->
+<meta name="description" content="Educational resources about stock market concepts, market terminology and financial literacy.">
 
 <style>
-:root{
-  --bg:#f7f9fc;
-  --ink:#111827;
-  --muted:#6b7280;
-  --blue:#0066ff;
-  --blue-dark:#0050d4;
-  --ring:#ffffff;
-  --note:#eef4ff;
-  --note-ink:#1e3a8a;
-  --chip:#e5eaf3;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme:dark){
-  :root{
-    --bg:#0d1324;
-    --ink:#f1f5f9;
-    --muted:#94a3b8;
-    --ring:#1b2442;
-    --note:#16213f;
-    --note-ink:#bcd0ff;
-    --chip:#1b2442;
-  }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+    line-height: 1.6;
 }
 
-*{
-  box-sizing:border-box;
+.container {
+    max-width: 460px;
+    margin: auto;
+    padding: 45px 22px;
+    text-align: center;
 }
 
-body{
-  margin:0;
-  font-family:"Segoe UI",system-ui,-apple-system,Roboto,sans-serif;
-  background:var(--bg);
-  color:var(--ink);
-  line-height:1.5;
+.profile {
+    width: 115px;
+    height: 115px;
+    margin: auto;
+    border-radius: 50%;
+    background: #174ea6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    overflow: hidden;
 }
 
-.wrap{
-  max-width:440px;
-  margin:0 auto;
-  padding:40px 20px;
-  text-align:center;
+h1 {
+    margin-top: 20px;
+    font-size: 28px;
 }
 
-.avatar{
-  position:relative;
-  width:120px;
-  height:120px;
-  border-radius:50%;
-  margin:0 auto 18px;
-  border:5px solid var(--ring);
-  background:linear-gradient(135deg,#0066ff,#00b3ff);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:42px;
-  font-weight:800;
-  overflow:hidden;
-  box-shadow:0 8px 24px rgba(0,102,255,.28);
+.subtitle {
+    color: #64748b;
+    margin: 12px 0 25px;
 }
 
-.avatar img{
-  position:absolute;
-  inset:0;
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.section {
+    background: white;
+    padding: 22px;
+    border-radius: 16px;
+    margin: 20px 0;
+    text-align: left;
 }
 
-h1{
-  margin:0 0 22px;
-  font-size:30px;
-  font-weight:800;
-  letter-spacing:.5px;
+.section h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
 }
 
-h2{
-  font-size:18px;
-  margin:28px 0 6px;
-  font-weight:700;
+.section p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
-h2 span{
-  color:var(--blue);
+.join-btn {
+    display: block;
+    width: 100%;
+    background: #1769e0;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: 20px;
 }
 
-p{
-  color:var(--muted);
-  margin:0 0 22px;
+.join-btn:hover {
+    background: #1054b8;
 }
 
-.btn{
-  display:block;
-  padding:16px 20px;
-  border-radius:14px;
-  color:#fff;
-  font-weight:700;
-  font-size:18px;
-  text-decoration:none;
-  background:linear-gradient(135deg,var(--blue),var(--blue-dark));
-  box-shadow:0 8px 20px rgba(0,102,255,.32);
-  transition:transform .15s, box-shadow .15s;
+.disclaimer {
+    font-size: 12px;
+    color: #64748b;
+    margin-top: 25px;
 }
 
-.btn:hover{
-  transform:translateY(-2px);
-  box-shadow:0 12px 26px rgba(0,102,255,.4);
-}
-
-.btn:focus-visible{
-  outline:3px solid var(--ink);
-  outline-offset:3px;
-}
-
-.note{
-  margin-top:24px;
-  padding:12px 14px;
-  border-radius:12px;
-  background:var(--note);
-  color:var(--note-ink);
-  font-size:12.5px;
-}
-
-.mini{
-  display:inline-block;
-  margin-top:22px;
-  padding:6px 14px;
-  border-radius:999px;
-  background:var(--chip);
-  color:var(--muted);
-  font-size:12px;
-  font-weight:600;
-  text-decoration:none;
-}
-
-.mini:hover{
-  color:var(--blue);
-}
-
-.mini:focus-visible{
-  outline:2px solid var(--blue);
-  outline-offset:2px;
-}
-
-@media (prefers-reduced-motion:reduce){
-  .btn{transition:none}
-  .btn:hover{transform:none}
+footer {
+    font-size: 12px;
+    margin-top: 25px;
+    color: #64748b;
 }
 </style>
 </head>
 
 <body>
 
-<main class="wrap">
+<main class="container">
 
-  <div class="avatar">
-    SM
-    <img
-      src="https://drive.google.com/thumbnail?id=1eEPOk4V3YJZv_Rjb_NokL7D4dtwRz8fl&sz=w400"
-      alt="Salman Memon"
-      referrerpolicy="no-referrer"
-      onerror="this.style.display='none'"
-    >
-  </div>
+    <div class="profile">SM</div>
 
-  <h1>SALMAN MEMON</h1>
+    <h1>Salman Memon</h1>
 
-  <a class="btn"
-     href="https://t.me/+TusfdCoZXV0zYTBl"
-     target="_blank"
-     rel="noopener noreferrer">
-     Join Telegram Channel →
-  </a>
+    <p class="subtitle">
+        Stock Market Education & Learning Resources
+    </p>
 
-  <h2>
-    Daily analysis for
-    <span>NIFTY, BANKNIFTY &amp; SENSEX</span>
-  </h2>
+    <div class="section">
 
-  <p>Free market updates Telegram channel par</p>
+        <h2>About This Channel</h2>
 
-  <a class="btn"
-     href="https://t.me/+TusfdCoZXV0zYTBl"
-     target="_blank"
-     rel="noopener noreferrer">
-     Join Telegram Channel →
-  </a>
+        <p>
+        This channel shares educational information
+        about stock market concepts and financial literacy.
+        </p>
 
-  <div class="note">
-    Market risk ke adheen hai. Yeh investment advice nahi hai.
-    SEBI Reg. No.: [apna number likhein]
-  </div>
+        <p>
+        Content is intended to help readers understand
+        basic market terminology and educational topics.
+        </p>
 
-  <a class="mini"
-     href="https://t.me/+G2yH9PFXXfw1YWQ9"
-     target="_blank"
-     rel="noopener noreferrer">
-     Managed by Sragancy
-  </a>
+    </div>
+
+    <div class="section">
+
+        <h2>Educational Topics</h2>
+
+        <p>• Introduction to stock market concepts</p>
+        <p>• Understanding market terminology</p>
+        <p>• Financial literacy and basic concepts</p>
+        <p>• General educational resources</p>
+
+    </div>
+
+    <a class="join-btn"
+       href="https://t.me/+TusfdCoZXV0zYTBl"
+       target="_blank"
+       rel="noopener noreferrer">
+
+       Visit Telegram Channel →
+
+    </a>
+
+    <p class="disclaimer">
+    Educational content only. No investment
+    recommendations or guaranteed returns.
+    Market investments involve risk.
+    </p>
+
+    <footer>
+        © 2026 Salman Memon
+    </footer>
 
 </main>
 
